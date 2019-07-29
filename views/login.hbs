@@ -1,0 +1,16 @@
+<h1>Login Page</h1>
+<hr>
+
+<div align="center">
+    <form action="/login" method="POST">
+         <span style="color: red">{{#if message}}
+             {{message.error}}</span>
+        {{/if}}<br><br>
+        <label>User Email:</label>
+        <input type="email" name="email" id="email"><br><br>
+        <label>Password:</label>&nbsp;
+        <input type="password" name="password" id="password"><br><br>
+        <button type="submit">LogIn</button><br>
+        <a href="/">New ?? Register Here</a>
+    </form>
+</div>
